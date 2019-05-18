@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header/Dark" transform="translate(-1146.000000, -19.000000)" fill="#464646">
+            <g id="Group" transform="translate(1067.000000, 15.000000)">
+                <g id="Links">
+                    <path d="M80.0671937,4 L101.932806,4 C102.522201,4 103,4.47779888 103,5.06719368 C103,5.65658847 102.522201,6.13438735 101.932806,6.13438735 L80.0671937,6.13438735 C79.4777989,6.13438735 79,5.65658847 79,5.06719368 C79,4.47779888 79.4777989,4 80.0671937,4 Z M84.5277997,13.8656126 L101.932806,13.8656126 C102.522201,13.8656126 103,14.3434115 103,14.9328063 C103,15.5222011 102.522201,16 101.932806,16 L84.5277997,16 C83.9384049,16 83.4606061,15.5222011 83.4606061,14.9328063 C83.4606061,14.3434115 83.9384049,13.8656126 84.5277997,13.8656126 Z" id="menu"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

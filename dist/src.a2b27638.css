@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #EFEFEF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.header-container[data-v-c14a9f] {
+  padding: 24px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container > div[data-v-c14a9f] {
+  display: flex;
+}
+.search[data-v-c14a9f] {
+  width: 600px;
+  margin-right: 100px;
+  margin-left: 16px;
+}
+.search .search-input[data-v-c14a9f] {
+  width: 100%;
+  height: 46px;
+}
+.search .search-input input[data-v-c14a9f] {
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  border: 1px solid #e5e5e5;
+  padding: 0 24px;
+  font-size: 18px;
+  transition: all 0.2s linear;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.search .search-input input[data-v-c14a9f]:hover {
+  border-color: #d8d8d8;
+}
+.search .search-input input[data-v-c14a9f]:focus {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+}
+.search .search-tabs[data-v-c14a9f] {
+  display: flex;
+  margin-top: 16px;
+}
+.search .search-tabs > a[data-v-c14a9f] {
+  font-size: 14px;
+  text-decoration: none;
+  color: #464646;
+  display: flex;
+  margin-right: 16px;
+  align-items: center;
+}
+.search .search-tabs > a > div[data-v-c14a9f] {
+  background: #eee;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.search .search-tabs > a > div.info[data-v-c14a9f] {
+  background: #464646;
+}
+.search .search-tabs > a > div.products[data-v-c14a9f] {
+  background-color: #FFBA00;
+}
+.search .search-tabs > a > span[data-v-c14a9f] {
+  color: inherit;
+  transition: color 0.2s linear;
+}
+.search .search-tabs > a:hover > span[data-v-c14a9f] {
+  color: #606060;
+  text-decoration: underline;
+}
+.menu[data-v-c14a9f] {
+  display: flex;
+  height: 46px;
+  align-items: center;
+}
+.menu > img[data-v-c14a9f]:not(:first-child) {
+  margin-left: 24px;
+}
+.menu img[data-v-c14a9f] {
+  transition: all 0.2s linear;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+}
+.menu img[data-v-c14a9f]:hover {
+  opacity: 0.7;
+}
+.products-attention[data-v-c14a9f] {
+  animation: attention-data-v-c14a9f 3s infinite;
+}
+@keyframes attention-data-v-c14a9f {
+0% {
+    box-shadow: 0 0 0 0 rgba(255, 186, 0, 0.4);
+}
+70% {
+    box-shadow: 0 0 0 10px rgba(255, 186, 0, 0);
+}
+100% {
+    box-shadow: 0 0 0 0 rgba(255, 186, 0, 0);
+}
+}
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
