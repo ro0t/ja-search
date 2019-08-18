@@ -1,7 +1,7 @@
 import './style.scss';
 import Vue from 'vue';
-import Search from './components/Search';
+import TabExamples from './TabExamples';
 
 console.log('🐈 Mjá.is');
 
-new Vue(Search).$mount('#header');
+new Vue(TabExamples).$mount('#header');

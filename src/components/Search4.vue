@@ -13,7 +13,7 @@
                         <span>Upplýsingar<span>24</span></span>
                     </a>
                     <a href="#" role="tab" class="product-tab" v-bind:class="{ active: tab === 'products' }" v-on:click="setTab('products')">
-                        <span><div class="new products-attention">Nýtt</div>Vöruleit<span>62</span></span>
+                        <span>Vöruleit<div class="new products-attention">62</div></span>
                     </a>
                 </div>
             </div>
@@ -27,18 +27,18 @@
 </template>
 
 <script lang="ts">
-export default {
-    data() {
-    	return {
-    	    tab: 'info',
-        };
-    },
-    methods: {
-        setTab(which: 'info' | 'products') {
-            this.tab = which;
+    export default {
+        data() {
+            return {
+                tab: 'info',
+            };
+        },
+        methods: {
+            setTab(which: 'info' | 'products') {
+                this.tab = which;
+            }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -137,8 +137,7 @@ export default {
                         padding: 2px 4px;
                         color: #fff;
                         font-weight: 600;
-                        margin-right: 8px;
-                        margin-left: -8px;
+                        margin-left: 8px;
                         display: inline-block;
                         border-radius: 12px;
                         position: relative;
@@ -174,7 +173,7 @@ export default {
                         text-decoration: none;
 
                         > .new {
-                           border-color: #fff;
+                            border-color: #fff;
                         }
                     }
                 }

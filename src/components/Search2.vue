@@ -13,7 +13,7 @@
                         <span>Upplýsingar<span>24</span></span>
                     </a>
                     <a href="#" role="tab" class="product-tab" v-bind:class="{ active: tab === 'products' }" v-on:click="setTab('products')">
-                        <span><div class="new products-attention">Nýtt</div>Vöruleit<span>62</span></span>
+                        <span><div class="new products-attention"></div>Vöruleit<span>62</span></span>
                     </a>
                 </div>
             </div>
@@ -27,18 +27,18 @@
 </template>
 
 <script lang="ts">
-export default {
-    data() {
-    	return {
-    	    tab: 'info',
-        };
-    },
-    methods: {
-        setTab(which: 'info' | 'products') {
-            this.tab = which;
+    export default {
+        data() {
+            return {
+                tab: 'info',
+            };
+        },
+        methods: {
+            setTab(which: 'info' | 'products') {
+                this.tab = which;
+            }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -131,16 +131,15 @@ export default {
                     transition: color .2s linear;
 
                     > .new {
-                        font-size: 9px;
                         text-transform: uppercase;
                         background: #FFBA00;
-                        padding: 2px 4px;
-                        color: #fff;
+                        width: 8px;
+                        height: 8px;
                         font-weight: 600;
-                        margin-right: 8px;
+                        margin-right: 16px;
                         margin-left: -8px;
                         display: inline-block;
-                        border-radius: 12px;
+                        border-radius: 4px;
                         position: relative;
                         top: -1px;
                         border: 1px solid transparent;
@@ -164,6 +163,10 @@ export default {
                     border-color: #464646;
                     background-color: #464646;
 
+                    .products-attention {
+                        animation: attentionWhite 3s infinite !important;
+                    }
+
                     &.product-tab {
                         border-color: #FFBA00;
                         background-color: #FFBA00;
@@ -174,7 +177,7 @@ export default {
                         text-decoration: none;
 
                         > .new {
-                           border-color: #fff;
+                            border-color: #fff;
                         }
                     }
                 }
@@ -214,6 +217,18 @@ export default {
         }
         100% {
             box-shadow: 0 0 0 0 rgba(255,186,0, 0);
+        }
+    }
+
+    @keyframes attentionWhite {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255,255,255, 0);
         }
     }
 </style>
