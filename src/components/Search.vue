@@ -12,14 +12,14 @@
                     <a href="#" role="tab" v-bind:class="{ active: tab === 'info' }" v-on:click="setTab('info')">
                         <span>Upplýsingar<span>24</span></span>
                     </a>
-                    <a href="#" role="tab" class="product-tab" v-bind:class="{ active: tab === 'products' }" v-on:click="setTab('products')">
+                    <a href="#" role="tab" class="product-tab products-attention" v-bind:class="{ active: tab === 'products' }" v-on:click="setTab('products')">
                         <span><div class="new products-attention">Nýtt</div>Vöruleit<span>62</span></span>
                     </a>
                 </div>
             </div>
             <div class="menu">
-                <img src="/assets/ICELAND.svg" height="22" />
-                <img src="/assets/user.svg" height="24" />
+                <img src="/assets/ICELAND.svg" class="mobile-hd" height="22" />
+                <img src="/assets/user.svg" class="mobile-hd" height="24" />
                 <img src="/assets/menu.svg" height="16" />
             </div>
         </div>
@@ -107,6 +107,11 @@ export default {
                 border-bottom: none;
                 border-radius: 8px 8px 0 0;
 
+                &.product-tab {
+                    border: 1px solid #FFBA00;
+                    border-bottom: none;
+                }
+
                 > div {
                     background: #eee;
                     width: 24px;
@@ -169,12 +174,20 @@ export default {
                         background-color: #FFBA00;
                     }
 
+                    &.products-attention {
+                        animation: none !important;
+                    }
+
                     span {
                         color: #fff;
                         text-decoration: none;
 
                         > .new {
                            border-color: #fff;
+
+                            &.products-attention {
+                                animation: none !important;
+                            }
                         }
                     }
                 }
@@ -202,7 +215,7 @@ export default {
     }
 
     .products-attention {
-        animation: attention 3s infinite;
+        animation: attention 1.5s infinite;
     }
 
     @keyframes attention {
@@ -214,6 +227,23 @@ export default {
         }
         100% {
             box-shadow: 0 0 0 0 rgba(255,186,0, 0);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-container {
+            > div {
+                padding: 0 24px;
+                width: 100%;
+            }
+        }
+
+        .search {
+            margin-right: 0;
+        }
+
+        .mobile-hd {
+            display: none;
         }
     }
 </style>

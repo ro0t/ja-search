@@ -3,15 +3,6 @@
         <div>
             <v-search />
         </div>
-        <div>
-            <v-search2 />
-        </div>
-        <div>
-            <v-search3 />
-        </div>
-        <div>
-            <v-search4 />
-        </div>
     </div>
 </template>
 
