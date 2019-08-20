@@ -232,6 +232,9 @@ export default {
 
     @media screen and (max-width: 768px) {
         .header-container {
+            border-bottom: none;
+            padding-bottom: 24px;
+
             > div {
                 padding: 0 24px;
                 width: 100%;
@@ -240,7 +243,20 @@ export default {
 
         .search {
             margin-right: 0;
+
+            .search-tabs {
+                > a {
+                    padding: 8px 24px;
+                    border-bottom: 1px solid #e5e5e5;
+                    border-radius: 24px;
+
+                    &.product-tab {
+                        border-bottom: 1px solid #FFBA00;
+                    }
+                }
+            }
         }
+
 
         .mobile-hd {
             display: none;
